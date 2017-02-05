@@ -17,6 +17,7 @@ public class Guerra {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+       Jogo novoJogo = new Jogo();
         // TODO code application logic here
                 
         /*Continente africa = new Continente(6);
@@ -26,6 +27,7 @@ public class Guerra {
         Continente europa = new Continente(5);
         Continente oceania = new Continente(4);*/
     }
+    
     
     
 }
