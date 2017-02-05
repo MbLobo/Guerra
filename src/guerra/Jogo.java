@@ -73,7 +73,7 @@ public class Jogo {
     }
     private void print(){
         for(int i=0;i<33;i++){
-            System.out.println(mapaMundi[i] + "  ");
+            System.out.print(mapaMundi[i] + "  ");
         }
     }
 }
