@@ -61,6 +61,6 @@ public class Territorio implements Cloneable{
     }
     @Override
     public String toString(){
-        return (getTerritorio() + getCor());
-    }
+        return (getTerritorio())+ " " + (getCor());
+    } 
 }

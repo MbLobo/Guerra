@@ -19,6 +19,6 @@ public class Continente {
     private final char[] oceania = new char[4];
     
     public Continente(){
-        Territorio ter = new Territorio();
+        //Territorio ter = new Territorio();
     }
 }
