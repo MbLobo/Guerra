@@ -14,7 +14,6 @@ public class Territorio{
     private char cor;
     private String territorio;
     private int[] fronteira = new int[4];
-    private Continente cont;
 
     public void setCor(char cor) {
         this.cor = cor;
