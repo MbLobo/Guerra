@@ -10,14 +10,14 @@ import java.util.*;
  *
  * @author Narcizo
  */
-public class Territorio {
+public class Territorio implements Cloneable{
     private char cor;
     private String territorio;
     private int[] fronteira = new int[4];
 
-    /*public void setCor(char cor) {
+    public void setCor(char cor) {
         this.cor = cor;
-    }*/
+    }
 
     public void setFronteira(int a, int b, int c, int d){
         this.fronteira[0] = a;
@@ -30,9 +30,23 @@ public class Territorio {
     }
     
     
-    public Territorio(){
-        
+    public Territorio(String territorio, int a, int b, int c, int e){
+        setTerritorio(territorio);
+        setFronteira(a, b, c, e);
     }
+
+    public char getCor() {
+        return cor;
+    }
+
+    public String getTerritorio() {
+        return territorio;
+    }
+
+    public int[] getFronteira() {
+        return fronteira;
+    }
+    
     public void print(){
         for(int i = 0; i < 5; i++){
             System.out.println("\n");
@@ -40,5 +54,13 @@ public class Territorio {
                 System.out.println("");
             }
         }
+    }
+    @Override
+    public Territorio clone() throws CloneNotSupportedException {
+        return (Territorio) super.clone();
+    }
+    @Override
+    public String toString(){
+        return (getTerritorio() + getCor());
     }
 }
