@@ -11,14 +11,63 @@ package guerra;
  */
 public class Continente {
     //private final String[] pais;
-    private final char[] americaNorte = new char[7];
-    private final char[] americaSul = new char[4];
-    private final char[] europa = new char[5];
-    private final char[] africa = new char[6];
-    private final char[] asia = new char[7];
-    private final char[] oceania = new char[4];
+    private char[] americaNorte = new char[7];
+    private char[] americaSul = new char[4];
+    private char[] europa = new char[5];
+    private char[] africa = new char[6];
+    private char[] asia = new char[7];
+    private char[] oceania = new char[4];
     
     public Continente(){
         //Territorio ter = new Territorio();
     }
+
+    public char[] getAmericaNorte() {
+        return americaNorte;
+    }
+
+    public char[] getAmericaSul() {
+        return americaSul;
+    }
+
+    public char[] getEuropa() {
+        return europa;
+    }
+
+    public char[] getAfrica() {
+        return africa;
+    }
+
+    public char[] getAsia() {
+        return asia;
+    }
+
+    public char[] getOceania() {
+        return oceania;
+    }
+
+    public void setAmericaNorte(char[] americaNorte) {
+        this.americaNorte = americaNorte;
+    }
+
+    public void setAmericaSul(char[] americaSul) {
+        this.americaSul = americaSul;
+    }
+
+    public void setEuropa(char[] europa) {
+        this.europa = europa;
+    }
+
+    public void setAfrica(char[] africa) {
+        this.africa = africa;
+    }
+
+    public void setAsia(char[] asia) {
+        this.asia = asia;
+    }
+
+    public void setOceania(char[] oceania) {
+        this.oceania = oceania;
+    }
+    
 }

@@ -69,6 +69,10 @@ public class Jogo {
         print();
         novoJogo();
     }
+
+    public Territorio[] getMapaMundi() {
+        return mapaMundi;
+    }
     private void sorteio(){
         List<Integer> indexes = new ArrayList<>();
         

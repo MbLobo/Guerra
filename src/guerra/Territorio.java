@@ -10,10 +10,11 @@ import java.util.*;
  *
  * @author Narcizo
  */
-public class Territorio implements Cloneable{
+public class Territorio{
     private char cor;
     private String territorio;
     private int[] fronteira = new int[4];
+    private Continente cont;
 
     public void setCor(char cor) {
         this.cor = cor;
@@ -54,10 +55,6 @@ public class Territorio implements Cloneable{
                 System.out.println("");
             }
         }
-    }
-    @Override
-    public Territorio clone() throws CloneNotSupportedException {
-        return (Territorio) super.clone();
     }
     @Override
     public String toString(){
